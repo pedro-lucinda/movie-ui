@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.pageLayout {
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+#homeView {
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+#navbar {
+  height: 70px;
+  border: 1px solid rgb(217, 217, 217);
+}
+
+#footer {
+  height: 70px;
+  border: 1px solid gray;
+  margin-top: auto;
+}
+
+#poster {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
