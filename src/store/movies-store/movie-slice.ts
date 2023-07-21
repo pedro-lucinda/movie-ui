@@ -2,7 +2,6 @@ import { createSlice, createAsyncThunk, PayloadAction } from "@reduxjs/toolkit";
 import { IMovie } from ".";
 import { api } from "../../config/services/axios";
 
-// Define a type for the slice state
 export interface MoviesState {
   favorites: string[];
   movie: IMovie | null;
@@ -10,7 +9,6 @@ export interface MoviesState {
   error: string | null;
 }
 
-// Define the initial state using that type
 const initialState: MoviesState = {
   favorites: [],
   movie: null,
@@ -18,7 +16,6 @@ const initialState: MoviesState = {
   error: null,
 };
 
-// Correctly type the parameters and return type of the async function
 export const searchMovieAsync = createAsyncThunk<IMovie, string, {}>(
   "movies/searchMovie",
   async (title, thunkAPI) => {
